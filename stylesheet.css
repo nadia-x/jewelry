@@ -48,7 +48,7 @@ nav{
   grid-area: nav;
   background-color: white;
   font-size: 1rem;
-  color: blue;
+  color: black;
 }
 main {
   font-family: "Fauna One", serif;

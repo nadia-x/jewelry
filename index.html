@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Quicksand:wght@300..700&display=swap" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Fauna+One&family=Quicksand:wght@300..700&display=swap" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="stylesheet.css">
 </head>
 
 <body>
@@ -19,12 +19,12 @@
     </header>
 
     <nav>
-        <ul>
-            <li><a href="#sale">SALE</a></li>
-            <li><a href="#newin">NEW IN</a></li>
-            <li><a href="#collections">COLLECTIONS</a></li>
-            <li><a href="#contact">GIFTS</a></li>
-        </ul>
+        <div>
+            <a href="#sale">SALE</a>
+            <a href="#newin">NEW IN</a>
+            <a href="#collections">COLLECTIONS</a>
+            <a href="#contact">GIFTS</a>
+        </div>
     </nav>
 
     <main>
@@ -119,30 +119,12 @@
                 <button onclick="myFunction()" class="dropbtn">Canada | English (US) | $(CAD)</button>
                 <div id="myDropdown" class="dropdown-content">
                   <a href="#home">Canada | English (US) | $(CAD)</a>
-                  <a href="#about">Unites Sate | English (US) | $(USD)</a>
+                  <a href="#about">United States | English (US) | $(USD)</a>
                   <a href="#contact">United Kingdom | English (Uk) | £(GBP))</a>
                 </div>
               </div>
               <script>
-                /* When the user clicks on the button, 
-                toggle between hiding and showing the dropdown content */
-                function myFunction() {
-                  document.getElementById("myDropdown").classList.toggle("show");
-                }
                 
-                // Close the dropdown if the user clicks outside of it
-                window.onclick = function(event) {
-                  if (!event.target.matches('.dropbtn')) {
-                    var dropdowns = document.getElementsByClassName("dropdown-content");
-                    var i;
-                    for (i = 0; i < dropdowns.length; i++) {
-                      var openDropdown = dropdowns[i];
-                      if (openDropdown.classList.contains('show')) {
-                        openDropdown.classList.remove('show');
-                      }
-                    }
-                  }
-                }
                 </script>
 
             
