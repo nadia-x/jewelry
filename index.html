@@ -5,40 +5,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Glitter Jewelry</title>
-    <link rel="stylesheet" href="styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Quicksand:wght@300..700&display=swap" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Quicksand:wght@300..700&display=swap" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Fauna+One&family=Quicksand:wght@300..700&display=swap" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="stylesheet.css">
 </head>
 
 <body>
     <header>
-        <h1>Jewelry Company</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#products">Products</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <h1>TRINITY</h1>
     </header>
-<main>
-    <section id="home">
-        <h2>Welcome to Jewelry CO.</h2>
-        <p>Discover the elegance of our collections</p>
-    </section>
 
-    <section id="about">
-        <h2>About Us</h2>
-        <p>At Jewelry Co. , we offer a wide range of beautiful and unique pieces to suit every taste.</p>
-    </section>
+    <nav>
+        <ul>
+            <li><a href="#sale">SALE</a></li>
+            <li><a href="#newin">NEW IN</a></li>
+            <li><a href="#collections">COLLECTIONS</a></li>
+            <li><a href="#contact">GIFTS</a></li>
+        </ul>
+    </nav>
 
-    <section id="products">
-        <h2>Our Products</h2>
-        <div class="our-products">
-            <div class="product">
+    <main>
+        
+
+        <section id="home">
+            <h2>Welcome to Jewelry CO.</h2>
+            <p>Discover the elegance of our collections</p>
+        </section>
+
+        <section id="about">
+            <h2>About Us</h2>
+            <p>At TRINITY , we offer a wide range of beautiful and unique pieces to suit every taste.</p>
+        </section>
+
+        <section id="products">
+            <h2>Our Products</h2>
+            <div class="our-products">
+            
+                <div class="product">
                 <img src="" alt="Necklaces & Pendants">
                 <h3>Necklaces & Pendants</h3>
                 <p>Stunning and modern.</p>
             </div>
+           
             <div class="product">
                 <img src="" alt="Bracelets">
                 <h3>Bracelets</h3>
@@ -64,24 +75,97 @@
                 <h3>Brooches</h3>
                 <p>Classic and decorative.</p>
             </div>
-        </div>
-    </section>
-</main>
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <form id="form">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            <button type="submit" value="Send">Send</button>
-        </form>
-    </section>
+            </div>
+        </section>
+    </main>
 
     <footer>
-        <p>&copy; 2024 Jewelry Co.. All rights reserved.</p>
+        <!--
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form id="form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit" value="Send">Send</button>
+            </form>
+        </section>
+        -->
+       
+
+        <div class="customerService">
+            <h4>Customer Service</h4>
+            <p><a href="#">FAQ</a></p>
+            <p><a href="#">Return & Exchanges</a></p>
+            <p><a href="#">Shipping</a></p>
+            <br>
+            <br>
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-instagram"></a>
+        <a href="#" class="fa fa-youtube"></a>
+        <a href="#" class="fa fa-pinterest"></a>
+        </div>
+        
+        <div class="membership">
+            <h4>Membership</a></h4>
+            <p><a href="#">Register</a></p>
+            <p><a href="#">TRINITY Club</a></p>
+            <br><br><br><br>
+
+            <div class="lang">
+                <button onclick="myFunction()" class="dropbtn">Canada | English (US) | $(CAD)</button>
+                <div id="myDropdown" class="dropdown-content">
+                  <a href="#home">Canada | English (US) | $(CAD)</a>
+                  <a href="#about">Unites Sate | English (US) | $(USD)</a>
+                  <a href="#contact">United Kingdom | English (Uk) | £(GBP))</a>
+                </div>
+              </div>
+              <script>
+                /* When the user clicks on the button, 
+                toggle between hiding and showing the dropdown content */
+                function myFunction() {
+                  document.getElementById("myDropdown").classList.toggle("show");
+                }
+                
+                // Close the dropdown if the user clicks outside of it
+                window.onclick = function(event) {
+                  if (!event.target.matches('.dropbtn')) {
+                    var dropdowns = document.getElementsByClassName("dropdown-content");
+                    var i;
+                    for (i = 0; i < dropdowns.length; i++) {
+                      var openDropdown = dropdowns[i];
+                      if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                      }
+                    }
+                  }
+                }
+                </script>
+
+            
+            <!--<select name="lang" id="Canada | English (US) | $(CAD)">
+                <option value="mercedes">Canada | English (US) | $(CAD)</option>
+                <option value="mercedes">Canada | English (US) | $(CAD)</option>
+                <option value="mercedes">Canada | English (US) | £(GBP)</option>
+            </select><h4><a href="#"></a></h4>-->
+        </div>
+        
+        <div class="aboutUs">
+            <h4>About Us</h4>
+            <p><a href="#">Jobs & Career</a></p>
+            <p><a href="#">Privacy Policy</a></p>
+            <p><a href="#">Terms & Conditions</a></p>
+            <br><br><br>
+            
+            <p>&copy; 2024 TRINITY Canada. All rights reserved.</p>
+        </div>
+
+        
+        
+
     </footer>
 
     <script src="scripts.js"></script>
