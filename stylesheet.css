@@ -179,8 +179,16 @@ footer a:hover {
   display: block;
 }
 
-
 footer .fa:hover {
     background-color: var(--dark-blue);
     color: var(--silver);
 } 
+img {
+  height: 300px;
+  width: 300px;
+}
+.product {
+  margin: auto;
+  display: block;
+  padding: 60px;
+}
