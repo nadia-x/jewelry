@@ -10,15 +10,15 @@
 
 body {
     font-family: 'Quicksand', sans-serif;
-    background-color: var(--pearl);
-    color: var(--onyx);
+    background-color: #FDF7F7; /* Pearl */
+    color: #000000; /* Onyx */
     margin: 0;
     padding: 0;
 }
 
 header {
-    background-color: var(--onyx);
-    color: var(--champagne);
+    background-color: #000000; /* Onyx */
+    color: #D2B68A; /* Champagne */
     padding: 20px;
     text-align: center;
 }
@@ -26,18 +26,18 @@ header {
 header h1 {
     margin: 0;
     font-family: 'Cinzel', serif;
-    color: var(--champagne);
+    color: #D2B68A; /* Champagne */
 }
 
 nav .navbar {
     display: flex;
     justify-content: center;
-    background-color: var(--champagne);
+    background-color: #D2B68A; /* Champagne */
     padding: 10px;
 }
 
 nav .navbar a {
-    color: var(--onyx);
+    color: #000000; /* Onyx */
     padding: 14px 20px;
     text-decoration: none;
     text-transform: uppercase;
@@ -45,8 +45,8 @@ nav .navbar a {
 }
 
 nav .navbar a:hover {
-    background-color: var(--onyx);
-    color: var(--champagne);
+    background-color: #000000; /* Onyx */
+    color: #D2B68A; /* Champagne */
 }
 
 main {
@@ -54,11 +54,11 @@ main {
 }
 
 main h2 {
-    color: var(--champagne);
+    color: #D2B68A; /* Champagne */
 }
 
 .product {
-    background-color: var(--marble);
+    background-color: #EBE8E0; /* Marble */
     padding: 20px;
     margin: 10px;
     text-align: center;
@@ -73,19 +73,19 @@ main h2 {
 }
 
 footer {
-    background-color: var(--onyx);
-    color: var(--champagne);
+    background-color: #000000; /* Onyx */
+    color: #D2B68A; /* Champagne */
     padding: 20px;
     text-align: center;
 }
 
 footer a {
-    color: var(--champagne);
+    color: #D2B68A; /* Champagne */
     text-decoration: none;
 }
 
 footer a:hover {
-    color: var(--silk);
+    color: #EEE5D9; /* Silk */
 }
 
 footer .fa {
@@ -96,11 +96,11 @@ footer .fa {
     text-decoration: none;
     margin: 5px 2px;
     border-radius: 50%;
-    background-color: var(--champagne);
-    color: var(--onyx);
+    background-color: #D2B68A; /* Champagne */
+    color: #000000; /* Onyx */
 }
 
 footer .fa:hover {
-    background-color: var(--onyx);
-    color: var(--champagne);
+    background-color: #000000; /* Onyx */
+    color: #D2B68A; /* Champagne */
 }
