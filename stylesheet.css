@@ -1,26 +1,25 @@
 /* Define colors */
 :root {
-    --silk: #EEE5D9;
-    --marble: #EBE8E0;
+    --black: #000000;
+    --white: #ffffff;
     --gold: #FFD700;
-    --pearl: #FDF7F7;
-    --velvet: #2D2D52;
-    --onyx: #000000;
+    --dark-blue: #2D2D52;
 }
 
 body {
     font-family: 'Quicksand', sans-serif;
-    background-color: var(--pearl);
-    color: var(--onyx);
+    background-color: var(--white);
+    color: var(--black);
     margin: 0;
     padding: 0;
 }
 
 header {
-    background-color: var(--onyx);
+    background-color: var(--black);
     color: var(--gold);
     padding: 20px;
     text-align: center;
+    border-bottom: 3px solid var(--gold);
 }
 
 header h1 {
@@ -34,13 +33,13 @@ header h1 {
 nav .navbar {
     display: flex;
     justify-content: center;
-    background-color: var(--gold);
+    background-color: var(--dark-blue);
     padding: 15px;
-    border-bottom: 3px solid var(--onyx);
+    border-bottom: 2px solid var(--gold);
 }
 
 nav .navbar a {
-    color: var(--onyx);
+    color: var(--white);
     padding: 14px 20px;
     text-decoration: none;
     text-transform: uppercase;
@@ -50,8 +49,8 @@ nav .navbar a {
 }
 
 nav .navbar a:hover {
-    background-color: var(--onyx);
-    color: var(--gold);
+    background-color: var(--gold);
+    color: var(--black);
     border-radius: 5px;
 }
 
@@ -60,7 +59,7 @@ main {
 }
 
 main h2 {
-    color: var(--gold);
+    color: var(--dark-blue);
     font-family: 'Cinzel', serif;
     font-size: 2em;
     border-bottom: 2px solid var(--gold);
@@ -69,7 +68,7 @@ main h2 {
 }
 
 .product {
-    background-color: var(--marble);
+    background-color: var(--white);
     padding: 20px;
     margin: 10px;
     text-align: center;
@@ -85,12 +84,12 @@ main h2 {
 }
 
 .product h3 {
-    color: var(--velvet);
+    color: var(--dark-blue);
     margin: 10px 0;
 }
 
 .product p {
-    color: var(--onyx);
+    color: var(--black);
 }
 
 .product:hover {
@@ -99,10 +98,11 @@ main h2 {
 }
 
 footer {
-    background-color: var(--onyx);
+    background-color: var(--black);
     color: var(--gold);
     padding: 40px 20px;
     text-align: center;
+    border-top: 3px solid var(--gold);
 }
 
 footer a {
@@ -113,7 +113,7 @@ footer a {
 }
 
 footer a:hover {
-    color: var(--silk);
+    color: var(--dark-blue);
 }
 
 footer .fa {
@@ -126,11 +126,11 @@ footer .fa {
     margin: 5px 2px;
     border-radius: 50%;
     background-color: var(--gold);
-    color: var(--onyx);
+    color: var(--black);
     transition: background-color 0.3s, color 0.3s;
 }
 
 footer .fa:hover {
-    background-color: var(--onyx);
+    background-color: var(--dark-blue);
     color: var(--gold);
 }
