@@ -1,21 +1,24 @@
 /* Define colors */
 :root {
-    --black: #000000;
-    --white: #ffffff;
-    --gold: #ffd700;
+    --silk: #EEE5D9;
+    --marble: #EBE8E0;
+    --champagne: #D2B68A;
+    --pearl: #FDF7F7;
+    --velvet: #2D2D52;
+    --onyx: #000000;
 }
 
 body {
     font-family: 'Quicksand', sans-serif;
-    background-color: var(--white);
-    color: var(--black);
+    background-color: var(--pearl);
+    color: var(--onyx);
     margin: 0;
     padding: 0;
 }
 
 header {
-    background-color: var(--black);
-    color: var(--gold);
+    background-color: var(--onyx);
+    color: var(--champagne);
     padding: 20px;
     text-align: center;
 }
@@ -23,18 +26,18 @@ header {
 header h1 {
     margin: 0;
     font-family: 'Cinzel', serif;
-    color: var(--gold); /* Ensure the text color is gold */
+    color: var(--champagne);
 }
 
 nav .navbar {
     display: flex;
     justify-content: center;
-    background-color: var(--gold);
+    background-color: var(--champagne);
     padding: 10px;
 }
 
 nav .navbar a {
-    color: var(--black);
+    color: var(--onyx);
     padding: 14px 20px;
     text-decoration: none;
     text-transform: uppercase;
@@ -42,8 +45,8 @@ nav .navbar a {
 }
 
 nav .navbar a:hover {
-    background-color: var(--black);
-    color: var(--gold);
+    background-color: var(--onyx);
+    color: var(--champagne);
 }
 
 main {
@@ -51,11 +54,11 @@ main {
 }
 
 main h2 {
-    color: var(--gold);
+    color: var(--champagne);
 }
 
 .product {
-    background-color: var(--white);
+    background-color: var(--marble);
     padding: 20px;
     margin: 10px;
     text-align: center;
@@ -70,19 +73,19 @@ main h2 {
 }
 
 footer {
-    background-color: var(--black);
-    color: var(--gold);
+    background-color: var(--onyx);
+    color: var(--champagne);
     padding: 20px;
     text-align: center;
 }
 
 footer a {
-    color: var(--gold);
+    color: var(--champagne);
     text-decoration: none;
 }
 
 footer a:hover {
-    color: var(--white);
+    color: var(--silk);
 }
 
 footer .fa {
@@ -93,12 +96,11 @@ footer .fa {
     text-decoration: none;
     margin: 5px 2px;
     border-radius: 50%;
-    background-color: var(--gold);
-    color: var(--black);
+    background-color: var(--champagne);
+    color: var(--onyx);
 }
 
 footer .fa:hover {
-    background-color: var(--black);
-    color: var(--gold);
+    background-color: var(--onyx);
+    color: var(--champagne);
 }
-
