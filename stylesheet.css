@@ -29,7 +29,8 @@ header h1 {
 header:before {
   content: "";
   display: block;
-  background: url('/mnt/data/Trinity.png') no-repeat center;
+  background-image: url(Trinity.png);
+  /* background: url('/mnt/data/Trinity.png') no-repeat center; */
   background-size: contain;
   width: 100px;
   height: 100px;
@@ -184,3 +185,13 @@ footer .fa:hover {
     background-color: var(--dark-blue);
     color: var(--silver);
 } 
+
+img {
+  height: 300px;
+  width: 300px;
+}
+.product {
+  margin: auto;
+  display: block;
+  padding: 60px;
+}
