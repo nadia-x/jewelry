@@ -2,7 +2,7 @@
 :root {
     --silk: #EEE5D9;
     --marble: #EBE8E0;
-    --champagne: #D2B68A;
+    --gold: #FFD700;
     --pearl: #FDF7F7;
     --velvet: #2D2D52;
     --onyx: #000000;
@@ -10,15 +10,15 @@
 
 body {
     font-family: 'Quicksand', sans-serif;
-    background-color: #FDF7F7; /* Pearl */
-    color: #000000; /* Onyx */
+    background-color: var(--pearl);
+    color: var(--onyx);
     margin: 0;
     padding: 0;
 }
 
 header {
-    background-color: #000000; /* Onyx */
-    color: #D2B68A; /* Champagne */
+    background-color: var(--onyx);
+    color: var(--gold);
     padding: 20px;
     text-align: center;
 }
@@ -26,44 +26,56 @@ header {
 header h1 {
     margin: 0;
     font-family: 'Cinzel', serif;
-    color: #D2B68A; /* Champagne */
+    color: var(--gold);
+    font-size: 2.5em;
+    letter-spacing: 2px;
 }
 
 nav .navbar {
     display: flex;
     justify-content: center;
-    background-color: #D2B68A; /* Champagne */
-    padding: 10px;
+    background-color: var(--gold);
+    padding: 15px;
+    border-bottom: 3px solid var(--onyx);
 }
 
 nav .navbar a {
-    color: #000000; /* Onyx */
+    color: var(--onyx);
     padding: 14px 20px;
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 700;
+    margin: 0 10px;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 nav .navbar a:hover {
-    background-color: #000000; /* Onyx */
-    color: #D2B68A; /* Champagne */
+    background-color: var(--onyx);
+    color: var(--gold);
+    border-radius: 5px;
 }
 
 main {
-    padding: 20px;
+    padding: 40px 20px;
 }
 
 main h2 {
-    color: #D2B68A; /* Champagne */
+    color: var(--gold);
+    font-family: 'Cinzel', serif;
+    font-size: 2em;
+    border-bottom: 2px solid var(--gold);
+    display: inline-block;
+    margin-bottom: 20px;
 }
 
 .product {
-    background-color: #EBE8E0; /* Marble */
+    background-color: var(--marble);
     padding: 20px;
     margin: 10px;
     text-align: center;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .product img {
@@ -72,35 +84,53 @@ main h2 {
     border-radius: 8px;
 }
 
+.product h3 {
+    color: var(--velvet);
+    margin: 10px 0;
+}
+
+.product p {
+    color: var(--onyx);
+}
+
+.product:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
 footer {
-    background-color: #000000; /* Onyx */
-    color: #D2B68A; /* Champagne */
-    padding: 20px;
+    background-color: var(--onyx);
+    color: var(--gold);
+    padding: 40px 20px;
     text-align: center;
 }
 
 footer a {
-    color: #D2B68A; /* Champagne */
+    color: var(--gold);
     text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s;
 }
 
 footer a:hover {
-    color: #EEE5D9; /* Silk */
+    color: var(--silk);
 }
 
 footer .fa {
     padding: 10px;
     font-size: 20px;
-    width: 20px;
+    width: 40px;
+    height: 40px;
     text-align: center;
     text-decoration: none;
     margin: 5px 2px;
     border-radius: 50%;
-    background-color: #D2B68A; /* Champagne */
-    color: #000000; /* Onyx */
+    background-color: var(--gold);
+    color: var(--onyx);
+    transition: background-color 0.3s, color 0.3s;
 }
 
 footer .fa:hover {
-    background-color: #000000; /* Onyx */
-    color: #D2B68A; /* Champagne */
+    background-color: var(--onyx);
+    color: var(--gold);
 }
