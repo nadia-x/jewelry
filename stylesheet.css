@@ -23,6 +23,7 @@ header {
 header h1 {
     margin: 0;
     font-family: 'Cinzel', serif;
+    color: var(--gold); /* Ensure the text color is gold */
 }
 
 nav .navbar {
@@ -100,3 +101,4 @@ footer .fa:hover {
     background-color: var(--black);
     color: var(--gold);
 }
+
