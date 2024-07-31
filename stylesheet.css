@@ -1,204 +1,101 @@
-/*----------------FONT----------------------
-font-family: "Cinzel", serif;  => title
-font-family: "Fauna One", serif;  => => Main
-
-
-#eee5d3
-*/
-
+/* Define colors */
+:root {
+    --velvet: #6d214f;
+    --champagne: #f7e7ce;
+    --pearl: #f0f8ff;
+    --onyx: #353839;
+}
 
 body {
-  display: grid;
-  height: 100%;
-  grid-template-columns: 1fr 3fr 1fr;
-  grid-template-rows: 10% 2% auto auto;
-  grid-template-areas: 
-  'header header header'
-  'nav    nav    nav'
-  'main   main   main'
-  'footer footer footer';
-}
-h1{
-  font-family: "Cinzel", serif;
-  font-size: 2cm;
- 
-}
-
-  
-.navbar {
-  font-family: "Fauna One", serif;
-    overflow: hidden;
-    background-color: #333;
-    position: fixed; /* Set the navbar to fixed position */
-    top: 0; /* Position the navbar at the top of the page */
-    width: 100%; /* Full width */
-}
-  
-  /* Links inside the navbar */
-.navbar a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-.navbar a:hover {
-  background: #ddd;
-  color: black;
+    font-family: 'Quicksand', sans-serif;
+    background-color: var(--pearl);
+    color: var(--onyx);
+    margin: 0;
+    padding: 0;
 }
 
 header {
-  /*TEXT*/
-  background-color: white;
-  color: black;
-  text-align: center;
+    background-color: var(--velvet);
+    color: var(--champagne);
+    padding: 20px;
+    text-align: center;
+}
 
-  /*Backgroud SET*/
-  grid-area: header;
+header h1 {
+    margin: 0;
+    font-family: 'Cinzel', serif;
 }
-nav{
-  grid-area: nav;
-  background-color: white;
-  font-size: 1rem;
-  color: black;
+
+nav .navbar {
+    display: flex;
+    justify-content: center;
+    background-color: var(--onyx);
+    padding: 10px;
 }
+
+nav .navbar a {
+    color: var(--champagne);
+    padding: 14px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+nav .navbar a:hover {
+    background-color: var(--velvet);
+}
+
 main {
-  font-family: "Fauna One", serif;
-	line-height: 1.6;
-  background-color: antiquewhite;
-  grid-area: main;
+    padding: 20px;
 }
+
+main h2 {
+    color: var(--velvet);
+}
+
+.product {
+    background-color: var(--champagne);
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
 footer {
-  
-  font-family: "Quicksand", sans-serif;
-  font-size: smaller;
-  background-color: black;
-  color: rgb(209, 209, 209);
-  grid-area: footer;
-
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto ;
-  grid-template-areas: 
-  'customerSV  membership  aboutUs';
-  
-}
-h4{
-  font-family: "Quicksand", sans-serif;
-  font: bold;
-  font-size: medium;
-  color: white;
-}
-h2{
-  font-family: "Cinzel", serif;
-  font-size: 1cm;
-  color: white;
+    background-color: var(--onyx);
+    color: var(--champagne);
+    padding: 20px;
+    text-align: center;
 }
 
-/*-------------Footer Design---------*/
-
-.customerService{
-  grid-area: customerSV;
-  margin: 5%;
-}
-.membership{
-  grid-area: membership;
-  margin: 5%;
-}
-.aboutUs{
-  grid-area: aboutUs;
-  margin: 5%;
+footer a {
+    color: var(--champagne);
+    text-decoration: none;
 }
 
-a{
-  color: white;
-  text-decoration-line: none;
+footer a:hover {
+    color: var(--velvet);
 }
 
-
-
-
-/*--------ICON----------*/
-.fa-youtube {
-  background: black;
-  color: white;
+footer .fa {
+    padding: 10px;
+    font-size: 20px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+    background-color: var(--velvet);
 }
 
-.fa-instagram {
-  background: black;
-  color: white;
-}
-.fa-pinterest {
-  background: black;
-  color: white;
-}
-
-.fa-facebook {
-background: black;
-  color: white;
-}
-.fa {
-  padding: 20px;
-  font-size: 30px;
-  width: 30px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 2px;
-  border-radius: 50%;
-}
-
-
-
-/*----------------Active after click of pointing-----------*/
-
-a:hover{
-  text-decoration: underline; 
-  color: #ffffff; 
-}
-.fa:hover {
-  text-decoration: none; 
-  opacity: 0.7;
-}
-
-
-/*------Drop down-------------*/
-.dropbtn {
-  background-color: black;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-  border-radius: 2%;
-}
-
-.dropbtn:hover, .dropbtn:focus {
-  background-color: rgb(54, 54, 54);
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  overflow: auto;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown a:hover {background-color: #ddd;}
-
-.show {display: block;}
+footer .fa:hover {
+    background-color: var(--champagne);
+    color: var(--velvet);
+} 
