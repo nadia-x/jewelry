@@ -133,7 +133,6 @@ body {
 .container{
     width: 100%;
     height: 100vh;
-    background-color: antiquewhite;
 }
 .form-box{
     width: 90%;
@@ -142,14 +141,14 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    background: #fff;
+    background: #1A1D64;
     padding: 50px 60px 70px;
     text-align: center;
 }
 .form-box h1{
     font-size: 30px;
     margin-bottom: 60px;
-    color: #1A1D64;
+    color:#fff;
     position: relative;
 }
 
@@ -158,7 +157,7 @@ body {
     width: 30px;
     height: 4px;
     border-radius: 3px;
-    background: #1A1D64;
+    background:#fff;
     position: absolute;
     bottom: -12px;
     left: 50%;
@@ -192,7 +191,7 @@ font-size: 13px;
 }
 form p a{
     text-decoration: none;
-    color: #000;
+    color: #fff;
 }
 .btn-field{
     width: 100%;
@@ -201,8 +200,8 @@ form p a{
 }
 .btn-field button{
     flex-basis: 48%;
-    background: #1A1D64;
-    color: #fff;
+    background: rgb(237, 220, 121);
+    color: #1A1D64;
     height: 40px;
     border-radius: 20px;
     border: 0;
@@ -211,7 +210,7 @@ form p a{
     transition: 1s;
 }
 .input-group{
-height: 280px;
+height: 100px;
 }
 .btn-field button-disable{
     background: #eaeaea;
