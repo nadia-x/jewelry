@@ -5,10 +5,22 @@ body {
   margin: 0;
   padding: 0;
   background-color: #fff;
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 10% 2% auto auto;
+    grid-template-areas: 
+    'header header header'
+    'nav    nav    nav'
+    'main   main   main'
+    'footer footer footer';
 }
 
 h1, h2, h3, h4 {
   font-family: 'Cinzel', serif;
+}
+h2{
+  text-align: center;
 }
 
 
@@ -18,18 +30,69 @@ header {
   text-align: center;
   padding: 20px 0;
   position: relative;
+  grid-area: header;
 }
-
+header img{
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+}
 header h1 {
   margin: 0;
   font-size: 2.5em;
+}
+.header-tap{
+width: 100%;
+height: 2cm;
+background-color: #1A1D64;
+display: flex;
+justify-content:space-between;
+align-items:normal;
+top: 0;
+overflow: hidden;
+position: fixed;
+padding: 10px;
+bottom: 0;
+}
+.header-icons{
+  display: flex;
+  padding: 20px;
+}
+.search-icon{
+  width: 100px;
+  height: 100px;
+}
+.member-icon{
+  width: 100px;
+  height: 100px;
+}
+.cart-icon{
+  width: 100px;
+  height: 100px;
+}
+.search-icon:hover{
+  cursor: pointer;
+  color: rgb(237, 220, 121);
+}
+.member-icon:hover{
+  cursor: pointer;
+  color: rgb(237, 220, 121);
+}
+.cart-icon:hover{
+  cursor: pointer;
+  color: rgb(237, 220, 121);
+}
+.searcg-box input:hover{
+  border: none;
+  font-size: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,.3);
 }
 
 /* Logo */
 header:before {
   content: "";
   display: block;
-  background-image: url(Trinity.png);
+  /*background-image: url(Trinity.png);*/
   /* background: url('/mnt/data/Trinity.png') no-repeat center; */
   background-size: contain;
   width: 100px;
@@ -40,8 +103,11 @@ header:before {
 
 .navbar {
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-around;
   background-color: #1A1D64;
+  grid-area: nav;
+  align-items:center;
 }
 
 .navbar a {
@@ -50,6 +116,7 @@ header:before {
   text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
+  text-align: center;
 }
 
 .navbar a:hover {
@@ -57,9 +124,10 @@ header:before {
   color: #1A1D64;
 }
 
-
 main {
   padding: 20px;
+  grid-area: main;
+  margin-top: 30px;
 }
 
 section {
@@ -74,6 +142,7 @@ section h2 {
 section p {
   font-size: 1em;
   line-height: 1.5;
+  text-align: center;
 }
 
 
@@ -111,6 +180,10 @@ footer {
   padding: 40px 20px;
   display: flex;
   justify-content: space-around;
+  grid-area: footer;
+}
+footer a:hover {
+  text-decoration: underline;
 }
 
 footer h4 {
@@ -125,9 +198,7 @@ footer p, footer a {
   margin: 5px 0;
 }
 
-footer a:hover {
-  text-decoration: underline;
-}
+
 
 .fa {
   padding: 10px;
@@ -140,6 +211,7 @@ footer a:hover {
 
 .fa:hover {
   opacity: 0.7;
+  text-decoration: none;
 }
 
 .dropdown-content {
@@ -193,3 +265,30 @@ img {
   display: block;
   padding: 60px;
 }
+@keyframes slide{
+  from{
+    transform: translateX(0)
+  }
+  to {
+    transform: translateX(-100%)
+  }
+}
+.gallery{
+  overflow: hidden;
+  right: 0%;
+  left: 0%;
+  white-space: nowrap; 
+}
+.gallery-slide{
+  display: inline-block;
+  animation: 10s slide infinite linear;
+}
+.gallery-slide img{
+  width: 300px;
+}
+
+.gallery div img:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
