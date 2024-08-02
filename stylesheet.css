@@ -1,4 +1,3 @@
-
 body {
   font-family: 'Cinzel', serif;
   color: #000;
@@ -22,7 +21,6 @@ h1, h2, h3, h4 {
 h2{
   text-align: center;
 }
-
 
 header {
   background-color: #1A1D64;
@@ -99,7 +97,6 @@ header:before {
   margin: 0 auto;
 }
 
-
 .navbar {
   display: flex;
   flex-direction: row;
@@ -144,7 +141,6 @@ section p {
   text-align: center;
 }
 
-
 .our-products {
   display: flex;
   flex-wrap: wrap;
@@ -172,7 +168,6 @@ section p {
   color: #333;
 }
 
-
 footer {
   background-color: #1A1D64;
   color: #fff;
@@ -196,8 +191,6 @@ footer p, footer a {
   text-decoration: none;
   margin: 5px 0;
 }
-
-
 
 .fa {
   padding: 10px;
@@ -290,4 +283,3 @@ img {
   cursor: pointer;
   transform: scale(1.1);
 }
-
