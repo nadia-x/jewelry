@@ -98,7 +98,10 @@ body {
     height: 100px;
     margin: 0 auto;
   }
-  
+  .menu{
+    background-color: #1A1D64;
+    
+  }
   
   .navbar {
     display: flex;
@@ -107,6 +110,9 @@ body {
     background-color: #1A1D64;
     grid-area: nav;
     align-items:center;
+    padding-top: 100px;
+    padding-bottom: 30px;
+    
   }
   
   .navbar a {
@@ -116,6 +122,8 @@ body {
     text-transform: uppercase;
     font-weight: bold;
     text-align: center;
+    background-color: #1A1D64;
+    
   }
   
   .navbar a:hover {
@@ -127,17 +135,18 @@ body {
     padding: 20px;
     grid-area: main;
     margin-top: 30px;
+
   }
   
 .container{
     width: 100%;
-    height: 100vh;
+    height: 70vh;
 }
 .form-box{
     width: 90%;
     max-width: 450px;
     position: absolute;
-    top: 50%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%,-50%);
     background: #1A1D64;
@@ -169,7 +178,7 @@ border-radius: 3px;
 display: flex;
 align-items: center;
 max-height: 65px;
-transition: max-height o.5s;
+transition: max-height 0.5s;
 overflow: hidden;
 }
 .input{
@@ -204,21 +213,21 @@ form p a{
     color: #1A1D64;
     margin-top: 1vh;
     height: 40px;
-    border-radius: 20px;
+    border-radius: 8px;
     border: 0;
     outline: 0;
     cursor: pointer;
     transition: 1s;
     font-family: 'Times New Roman', Times, serif;
-    font-size: medium;
+    font-size: large;
 
 }
 .input-group{
 height: 150px;
 }
 .btn-field button-disable{
-    background: #eaeaea;
-    color: #555;
+    background: #847676;
+    color: #893434;
 }
 .input::placeholder{
   font-family: 'Times New Roman', Times, serif;
