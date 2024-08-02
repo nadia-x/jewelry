@@ -222,13 +222,25 @@ form p a{
     font-size: large;
 
 }
+.btn-submit button{
+  flex-basis: 50%;
+    background: rgb(255, 255, 255);
+    color: #1A1D64;
+    margin-top: 1vh;
+    height: 40px;
+    border-radius: 8px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: 1s;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+
+}
 .input-group{
 height: 150px;
 }
-.btn-field button-disable{
-    background: #847676;
-    color: #893434;
-}
+
 .input::placeholder{
   font-family: 'Times New Roman', Times, serif;
   font-size: 20px;
