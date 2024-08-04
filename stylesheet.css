@@ -15,6 +15,7 @@ body {
     'footer footer footer';
 }
 
+
 h1, h2, h3, h4 {
   font-family: 'Cinzel', serif;
 }
@@ -283,3 +284,43 @@ img {
   cursor: pointer;
   transform: scale(1.1);
 }
+
+/* For tablets: */
+@media screen and (min-width: 600px)  and (max-width:1023px){
+  body{
+    max-width: 1023px;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+  'header'
+  'nav'
+  'main'
+  'footer';
+  }
+  .our-products {
+    display: flex;
+    flex-wrap: column;
+  }
+
+}
+/* For Mobile: */
+@media screen and (max-width: 767px){
+  body{
+    max-width: 767px;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+  'header'
+  'nav'
+  'main'
+  'footer';
+  }
+
+  footer p, footer a {
+    font-size: 0.5em;
+  }
+  .our-products {
+    display: flex;
+    flex-wrap: column;
+  }
+}
+
+
